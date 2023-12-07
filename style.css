@@ -23,7 +23,7 @@ header {
 header img {
     height: 25rem;
 }
-header button {
+button {
     color: var(--main-txt);
     font-size: 1.6rem;
     border: none;
@@ -138,4 +138,37 @@ section.quote-container .n {
     align-self: flex-end;
     font-weight: 900;
     font-size: 1.2rem;
+}
+section.cta{
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--main-txt);
+}
+section.cta button{
+    border: .2rem solid white;
+}
+section.cta .cta-box{
+    border-radius: 2rem;
+    height: 15rem;
+    width: 80rem;
+    background-color: var(--btn-clr);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section.cta .cta-box p{
+    font-size: 1.6rem;
+    color: var(--links-txt);
+}
+footer{
+    background: var(--dark-background);
+    color: var(--main-txt);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
