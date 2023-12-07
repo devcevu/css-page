@@ -1,8 +1,83 @@
-:root{
+:root {
     --dark-background: #1f2937;
     --main-txt: #f9faf8;
     --links-txt: #e4e7eb;
     --info-txt: #1f2937;
-    --quote-txt:#e5e7eb;
+    --quote-txt: #e5e7eb;
+    --btn-clr: #3882f6;
     font-size: 10px;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: var(--dark-background);
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+}
+header img {
+    height: 25rem;
+}
+header button {
+    color: var(--main-txt);
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.6rem;
+    background: var(--btn-clr);
+    padding: 0.6rem 2.4rem;
+}
+nav {
+    font-size: 2rem;
+    color: var(--main-txt);
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    gap: 1.6rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--links-txt);
+}
+
+div.header {
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+div.header .header-left{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+div.header .header-left h1 {
+    color: var(--main-txt);
+    flex: 2;
+    font-size: 4rem;
+    max-width: 15ch;
+}
+div.header .header-left p {
+    color: var(--links-txt);
+    flex: 1;
+    font-size: 1.6rem;
+    max-width: 35ch;
+    font
 }
