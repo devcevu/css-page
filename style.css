@@ -3,7 +3,7 @@
     --main-txt: #f9faf8;
     --links-txt: #e4e7eb;
     --info-txt: #1f2937;
-    --quote-txt: #e5e7eb;
+    --quote-bg: #e5e7eb;
     --btn-clr: #3882f6;
     font-size: 10px;
 }
@@ -61,7 +61,7 @@ div.header {
     gap: 6rem;
 }
 
-div.header .header-left{
+div.header .header-left {
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -79,5 +79,63 @@ div.header .header-left p {
     flex: 1;
     font-size: 1.6rem;
     max-width: 35ch;
-    font
+}
+main {
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+main h2 {
+    font-size: 3.6rem;
+    color: var(--info-txt);
+}
+main img {
+    height: 30rem;
+}
+main .main-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+main .main-container .main-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+main .main-container .main-item p {
+    text-align: center;
+    max-width: 22ch;
+}
+section.quote-container {
+    padding: 20rem;
+    background-color: var(--quote-bg);
+    color: var(--info-txt);
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+section.quote-container .quote-small {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section.quote-container .quote-small .quote {
+    max-width: 40ch;
+    font-size: 3.6rem;
+    font-style: italic;
+    font-weight: 200;
+}
+section.quote-container .n {
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: 1.2rem;
 }
